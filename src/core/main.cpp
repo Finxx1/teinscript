@@ -1,7 +1,6 @@
 #include <Windows.h>
 #include <psapi.h>
 
-#include <stdio.h>
 #include <stdarg.h>
 
 #include <tein/addresses.h>

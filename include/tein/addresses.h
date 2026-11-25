@@ -19,4 +19,6 @@ address in Ghidra instead. The entrypoint is used to correct for relocations.
 
 #define TEIN_ADDR_CHAINCHOMP_DASH 0x0048ff1a // ChainChomp.cpp:180 (175 bytes)
 
+#define TEIN_ADDR_SPIKE_DIE_CALL 0x004ea9ed // Player.cpp:1390 (5 bytes)
+
 #endif
