@@ -9,7 +9,7 @@ LINKFLAGS = /NOLOGO /DLL /INCREMENTAL:NO
 LINKFLAGS = /DEBUG $(LINKFLAGS)
 !ENDIF
 
-OBJS = main.obj patch.obj
+OBJS = main.obj patch.obj hooks.obj
 LIBS = user32.lib
 
 teinmodcore.dll: $(OBJS)

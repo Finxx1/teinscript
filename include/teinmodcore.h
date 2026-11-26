@@ -15,6 +15,7 @@ extern "C" {
 #endif
 
 typedef void (*IDetourFn)(uintptr_t, uintptr_t, uintptr_t, uintptr_t);
+typedef void (*IInjectFn)(void);
 
 // main.cpp
 void EXPORT IPrint(const char* fmt, ...);
@@ -28,6 +29,10 @@ bool EXPORT IPatchNOP(void* addr, size_t bytes);
 bool EXPORT IPatchCallZero(void* addr, size_t bytes);
 bool EXPORT IPatchCallOne(void* addr, size_t bytes);
 bool EXPORT IPatchDetour(void* addr, IDetourFn detourfn, bool classfunc);
+bool EXPORT IPatchInject(void* addr, IInjectFn injectfn, size_t insbytes);
+
+// hooks.cpp
+bool IRegisterHooks(void);
 
 #ifdef __cplusplus
 }

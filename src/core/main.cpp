@@ -68,6 +68,11 @@ bool IInit(void) {
 	
 	IPatchNOP((void*)TEIN_ADDR_CHAINCHOMP_DASH, 175);
 	
+	if (!IRegisterHooks()) {
+		IPrint("IRegisterHooks failed\n");
+		return false;
+	}
+	
 	return true;
 }
 
