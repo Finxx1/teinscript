@@ -27,10 +27,29 @@ address in Ghidra instead. The entrypoint is used to correct for relocations.
 #define TEIN_ADDR_SQUISH_DIE_CALL 0x004ea53f // Player.cpp:1352 (5 bytes)
 #define TEIN_ADDR_SPIKE_DIE_CALL 0x004ea9ed // Player.cpp:1390 (5 bytes)
 #define TEIN_ADDR_TOXIC_DIE_CALL 0x004ead84 // Player.cpp:1422 (5 bytes)
+#define TEIN_ADDR_MOTHER_DIE_CALL 0x004eae43 // Player.cpp:1431 (5 bytes)
+#define TEIN_ADDR_AGON_DIE_CALL 0x004eb16a // Player.cpp:1492 (5 bytes)
+#define TEIN_ADDR_FINALSTEVE_DIE_CALL1 0x004ef72d // ProgressionTrigers.cpp:320 (5 bytes)
+#define TEIN_ADDR_FINALSTEVE_DIE_CALL2 0x004ef73b // ProgressionTrigers.cpp:320 (5 bytes)
+
+#define TEIN_ADDR_LEDGE_GRAB_SOUND_CALL 0x004e8abf // Player.cpp:887 (5 bytes)
 
 #define TEIN_ADDR_GROUND_JUMP 0x004e82c1 // Player.cpp:743 (8 bytes)
 #define TEIN_ADDR_BONUS_JUMP 0x004e84b0 // Player.cpp:773 (8 bytes)
 #define TEIN_ADDR_CORNER_JUMP 0x004e81f6 // Player.cpp:731 (8 bytes)
 #define TEIN_ADDR_LONG_JUMP 0x004e8194 // Player.cpp:729 (8 bytes)
+
+#define TEIN_ADDR_ENEMY_BOUNCE 0x004e80d0 // Player.cpp:710 (8 bytes)
+#define TEIN_ADDR_MUSH_BOUNCE 0x004e80c6 // Player.cpp:706 (8 bytes)
+#define TEIN_ADDR_HIGH_BOUNCE 0x004ea0fa // Player.cpp:1240 (8 bytes)
+
+#define TEIN_ADDR_PLAYER_UPDATE_END 0x004ebcc9 // Player.cpp:1699 (5)
+
+#define TEIN_ADDR_PLAYER_INIT_CALL1 0x004ceabc // Entity.h:165 (5)
+#define TEIN_ADDR_PLAYER_INIT_CALL2 0x004cead7 // Entity.h:165 (5)
+
+#define TEIN_ADDR_NPC_INTERACT 0x004da57d // NPC.cpp:140 (7)
+
+#define TEIN_ADDR_ORB_EXPLODE 0x004dee1f // Orbs.cpp:166 (5)
 
 #endif
